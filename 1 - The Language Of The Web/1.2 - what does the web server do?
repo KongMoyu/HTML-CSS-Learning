@@ -1,0 +1,9 @@
+## Server & Browser?
+
+1. Server waits for request from browser on the internet. E.g web pages, images, sounds, videos. Server will retrieve them for you.
+
+2. Server will locate the resources and send back to the browser, because the server stores all the html files and other file types.
+
+
+1. Browser allow user to surf it and visit sites in its browser window to display the page after getting the html files which have the page's content and structure.
+
