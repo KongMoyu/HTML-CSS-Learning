@@ -1,4 +1,4 @@
-##How things work in the Web?
+### How things work in the Web?
 
 1. Create file written in html, which tells the browser to display your pages on web server, while usable on all devices.
 
