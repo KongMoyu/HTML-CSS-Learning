@@ -13,25 +13,38 @@ h1 { }
 h2 { }
 p { }
 
-/* Overriding The Inheritance: Funtional Elements Specification */
+/* Overriding The Inheritance: Inline funtional Elements Specification */
 em { }
 
 
 
-
-/* THE ABOVE RULES ARE NOT RECOMMENDED, AS THERE IS MORE SPECIFIC WAY TO SELECT INDIVIDUALLY TO STYLE, WHICH IS TO WRITE: CLASS SELECTOR */
-
+/* THE ABOVE RULES ARE NOT RECOMMENDED (BUT MUST KNOW), AS THERE IS MORE SPECIFIC WAY TO 'SELECT INDIVIDUALLY' TO STYLE, WHICH IS TO WRITE: A CLASS SELECTOR (involoves a ".") */
 
 
-/* STEP 1: Define a class name in any HTML element by adding class attribute to it */
-
-<p class="greentea"> ... </p>
-
-/* STEP 2: Write the class rules (.class name { properties: values; }) which apply styles to all HTML elements that have that class name */
-
+/* STEP 1: Define classes by writing the class rules (.class name { properties: values; }) */
+.greentea {
+  color: green;
+}
+.blueberry {
+  color: purple;
+}
+/* OR (but have harder to apply)(more specific) */
 p.greentea {
   color: green;
 }
+blockquote.greentea, p.greentea {
+  color: green;
+}
 
-/* STEP 3:  */
+/* STEP 2: adds the class attribute to any HTML element you want to select to use the classes by placing each class name into the value of the class attribute */
+<p class="greentea blueberry"> ... </p>
+
+/* STEP 3: know the logic for browser to determine the specificity of the class selectors. */
+- Super specific: p.class_name (located lowest in the CSS file) E.g Top-Green, then-blue, last-purple: The resulted color is purple.
+- Most specific: p.class_name(1) p.class_name(2) p.class_name(3)
+- Medium specific: .class_name and just use it as attribute value <p class="class_name">
+- Least specific: p { properties: values; }
+
+
+
 
