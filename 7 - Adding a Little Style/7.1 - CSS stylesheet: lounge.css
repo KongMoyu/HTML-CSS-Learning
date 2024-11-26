@@ -1,10 +1,18 @@
 /* Put in the root folder! */
 
-/* Group Styling */
+/* Ultimate Inheritance: affects everything */
 
-h1, h2 {}
+body {
 
-/* Individual Styling */
+}
+  
+/* Group Inheritance: affects selected structural elements*/
+
+h1, h2 {
+
+}
+
+/* Structural Elements Inheritance: affects  */
 
 h1 {}
 
@@ -12,4 +20,6 @@ h2 {}
 
 p {}
 
+/* S
 
+/* Overriding 
