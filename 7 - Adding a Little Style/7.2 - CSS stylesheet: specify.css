@@ -2,7 +2,7 @@
 
 
 
-/* Ultimate Inheritance: affects everything :P (text-color or background or font or border or ... ) */
+/* Ultimate Inheritance: affects everything :P (h1, h2, blockquote, p, em, a...) */
 body { }
   
 /* Group Inheritance: affects selected structural elements and their inline functional elements */
@@ -15,6 +15,7 @@ p { }
 
 /* Overriding The Inheritance: Inline funtional Elements Specification */
 em { }
+
 
 
 
@@ -36,7 +37,7 @@ blockquote.greentea, p.greentea {
   color: green;
 }
 
-/* STEP 2: adds the class attribute to any HTML element you want to select to use the classes by placing each class name into the value of the class attribute */
+/* STEP 2: (adds the class attribute to any HTML element you want to select): to use the classes by placing each class name into the value of the class attribute */
 <p class="greentea blueberry"> ... </p>
 
 /* STEP 3: know the logic for browser to determine the specificity of the class selectors. */
