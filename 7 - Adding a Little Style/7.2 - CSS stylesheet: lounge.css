@@ -23,8 +23,15 @@ em { }
 
 
 
-/* STEP 1: Define a class of elements in HTML tags by adding attributes to them */
+/* STEP 1: Define a class name in any HTML element by adding class attribute to it */
 
-<p class="greentea">
+<p class="greentea"> ... </p>
 
+/* STEP 2: Write the class rules (.class name { properties: values; }) which apply styles to all HTML elements that have that class name */
+
+p.greentea {
+  color: green;
+}
+
+/* STEP 3:  */
 
