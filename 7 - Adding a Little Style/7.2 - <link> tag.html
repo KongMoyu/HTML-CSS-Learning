@@ -1,14 +1,41 @@
-<h3>Link CSS stylesheet</h3>
-
+1. Linking CSS stylesheet:
 <!-- type="" is no longer needed for HTML5 -->
 <!-- 'rel' means what the current file is linked to: in one word -->
 <!-- 'href' is used because the link can not only be a relative file, but also an URL! -->
-
 <link type="text/css" rel="stylesheet" href="lounge.css">
 
+2. Linking Favicon
+<!-- A <link> tag can specify the favicon for a website, which is the small icon displayed in the browser tab. -->
+<link rel="icon" type="image/png" href="favicon.png">
+
+3. Preloading Resources
+<!-- You can use <link> to preload assets such as fonts, images, or scripts to improve performance. -->
+<link rel="preload" href="styles.css" as="style">
+<link rel="preload" href="font.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+
+4. Importing Fonts
+<!-- The <link> tag is commonly used to import web fonts from services like Google Fonts. -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+
+5. Alternate Languages
+<!-- Specify alternate versions of a webpage in different languages or for different regions. -->
+<link rel="alternate" hreflang="en" href="https://example.com/en">
+<link rel="alternate" hreflang="es" href="https://example.com/es">
+
+6. Importing JavaScript Modules
+<!-- While not as common, some advanced setups might use <link> for importing JavaScript modules. -->
+<link rel="modulepreload" href="module.js">
+
+7. Manifest File
+<!-- The <link> tag can link to a web application manifest file for progressive web apps (PWAs). --> 
+<link rel="manifest" href="/manifest.json">
 
 
+\\\
 
-<!--  -->
+Attributes Overview:
+type: Specifies the MIME type (e.g., text/css, application/rss+xml, etc.).
+rel: Defines the relationship between the current document and the linked resource (e.g., stylesheet, icon, canonical).
+href: URL of the resource being linked.
 
-<!--  -->
+\\\\
