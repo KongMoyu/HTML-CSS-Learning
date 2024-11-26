@@ -1,14 +1,28 @@
-/* Group Styling */
+/* Put .css file in the root folder !!! */
 
-h1, h2 {}
+/* Ultimate Inheritance: affects everything (h1, h2, blockquote, p, em, a...) */
+body { }
+  
+/* Group Inheritance: affects selected structural elements and their inline functional elements */
+h1, h2 { }
 
-/* Individual Styling */
+/* Structural Elements Inheritance: affects itself and inline functional elements */
+h1 { }
+h2 { }
+p { }
 
-h1 {}
+/* Overriding The Inheritance: Inline funtional Elements Specification */
+em { }
 
-h2 {}
+/* Define classes by writing the class rules (.class name { properties: values; }) */
+.class_name {
+  property: value;
+}
 
-p {}
+/* Adding the class name into the value of the class attribute HTML struture element */
+<p class="class_name"> 
+
+
 
 
 
