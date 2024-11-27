@@ -1,0 +1,30 @@
+/* In HTML file:
+
+<link type="text/css" href="lounge-mobile.css" rel="stylesheet" media="screen and (max-device-width: 480px)">
+<link type="text/css" href="lounge-print.css" rel="stylesheet" media="print">
+
+*/
+
+
+/* In CSS file: */
+
+@media screen and (min-device-width:481px) {
+  #guarantee {
+    margin-right: 250px;
+  }
+}
+
+@media screen and (max-device-width:480px) {
+  #guarantee {
+    margin-right: 30px;
+  }
+}
+@media print {
+  body {
+    font-family: Times, "Times New Roman", serif;
+  }
+}
+
+p.specials {    /* Apply to all pages, as there is no media rule. */
+  color: red;
+}
