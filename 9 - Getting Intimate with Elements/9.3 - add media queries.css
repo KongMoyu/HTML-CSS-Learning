@@ -19,7 +19,7 @@
     margin-right: 30px;
   }
 }
-@media print {
+@media print {   /* print version */
   body {
     font-family: Times, "Times New Roman", serif;
   }
