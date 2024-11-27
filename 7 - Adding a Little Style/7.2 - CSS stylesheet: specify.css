@@ -5,7 +5,7 @@
 /* Ultimate Inheritance: affects everything :P (h1, h2, blockquote, p, em, a...) */
 body { }
   
-/* Group Inheritance: affects selected structural elements and their inline functional elements */
+/* Shared Inheritance: affects selected structural elements and their inline functional elements */
 h1, h2 { }
 
 /* Structural Elements Inheritance: affects itself and inline functional elements */
