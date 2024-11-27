@@ -1,0 +1,32 @@
+/* classes can be reused for any element you want or select */
+
+/* case 1: */
+p.specials {    /* All <p> that are in the specials class */
+  color: red; 
+}
+
+/* case 2: */
+.specials {       /* All elements in the specials class */
+  color: red;
+}
+
+/* CASE 1: */
+p#footer {     /* For any <p> element has the "footer" id */
+  color: red;
+}
+
+/* CASE 2: */
+#footer {        /* For any element has the "footer" id */
+  color: red;
+}
+ 
+
+
+/* Key difference is that you dont always reuse the id, because it is often unique, but you can reuse classes if you need */
+
+
+
+
+
+
+
