@@ -20,7 +20,7 @@
   font-size: (h1)->21px; (h2)->17px; (p)->14px;
   font-size: 150%; <- of the inherited font px size. (OR scale with em, E.g 1.2em;)
   font-weight: lighter; normal; bold; bolder;
-  font-style: italic; oblique;
+  font-style: italic; 
   font-family(default): Times, Times New Roman, Geogia, serif;  <- (family name at the last)(brower will intrepret in a first-come-first-serve basis, like a priority list.)
   font-family(without serif): Arial(Common), Geneva(MAC), Verdana(PC), "Trebuchet MS", "Arial Black", sans-serif;
   font-family(playful): "Comic Sans", "Apple Chancery", cursive;
