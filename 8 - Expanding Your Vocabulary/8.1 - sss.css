@@ -1,1 +1,67 @@
+/*
 
+.color properties {
+
+  color(font): silver; (pale-green)->olive; gray; (brown-red)->maroon; black; navy; purple; (pink)->Fuchsia; blue; (green-blue)->teal; green; red; (light-green)->lime; yellow; (light-blue)->aqua; white;
+  background-color: red;
+  
+  top: position of the top of the element
+  left: to position its left side
+  text-align: left; center; or right;
+
+  list-style: change how list item look in a list.
+
+  background-image: to put an image behind an element.
+
+}
+
+.font properties {
+  font-size: xx-small; x-small; small; medium; large; x-large; xx-large; <- best use for body, so that when you change body... everything follows, its like a new default font size for you page.
+  font-size: (h1)->21px; (h2)->17px; (p)->14px;
+  font-size: 150%; <- of the inherited font px size. (OR scale with em, E.g 1.2em;)
+  font-weight: lighter; normal; bold; bolder;
+  font-style: italic; oblique;
+  font-family(default): Times, Times New Roman, Geogia, serif;  <- (family name at the last)(brower will intrepret in a first-come-first-serve basis, like a priority list.)
+  font-family(without serif): Arial(Common), Geneva(MAC), Verdana(PC), "Trebuchet MS", "Arial Black", sans-serif;
+  font-family(playful): "Comic Sans", "Apple Chancery", cursive;
+  font-family(typewriter): Courier, "Courier New", "Andale Mono", monospace;
+  font-family(stylized): Impact, "Last Ninja", fantasy;
+  [The @font-face rule: define name + location, using E.g .woff file.]
+  [.woff: web open font format, supported on most modern browswer]
+  [.svg: scalable vector graphic fonts, is a general-puepose graphics format.] 
+  [.ttf: truetype (older)]
+  [.otf: opentype (newer), builds on top of truetype.]
+  [.eot: embedded opentype fonts, proprietary for Microsoft, supported only on IE.]
+}
+
+@font-face {
+  font-family: "Emblema One"; <- you can create any name you want.
+  src: url("./EmblemaOne-Regular.woff"), 
+  src: url("./EmblemaOne-Regular.ttf"); <- put in two type files' url as value for the browser to get the font.
+
+ [The @font-face rule: define name + location, using E.g .woff file.]
+  [.woff: web open font format, supported on most modern browswer]
+  [.svg: scalable vector graphic fonts, is a general-puepose graphics format.] 
+  [.ttf: truetype (older)]
+  [.otf: opentype (newer), builds on top of truetype.]
+  [.eot: embedded opentype fonts, proprietary for Microsoft, supported only on IE.]
+
+  (Use case: h1 { font-family: "Emblema One", sans-serif; } <- sans-serif acts as a back-up.)
+
+  ( More at: http://www.fontsquirrel.com/ OR http://www.google.com/webfonts)
+}
+
+.text_format properties {
+  border: 1px solid gray;
+  border-bottom: 1px solid black;
+  line-height: sets the space between lines in a text element
+  padding: space between adge of an element and its content.
+  letter-spacing: L i k e  t h i s 
+  text-decoration: (line on top of the text)->overline; underline; line-through'
+}
+
+
+
+
+
+*/
