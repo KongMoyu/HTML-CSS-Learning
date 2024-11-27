@@ -22,7 +22,7 @@ p#footer {     /* For any <p> element has the "footer" id */
  
 
 
-/* Key difference is that you dont always reuse the id, because it is often unique, but you can reuse classes if you need */
+/* Key difference is that you dont always reuse the id, because it is often unique and only match one element in a page, but you can reuse classes if you need */
 
 
 
