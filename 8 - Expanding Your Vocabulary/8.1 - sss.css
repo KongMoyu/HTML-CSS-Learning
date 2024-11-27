@@ -3,7 +3,7 @@
 .color properties {
 
   color(font): silver; (pale-green)->olive; gray; (brown-red)->maroon; black; navy; purple; (pink)->Fuchsia; blue; (green-blue)->teal; green; red; (light-green)->lime; yellow; (light-blue)->aqua; white;
-  background-color: red;
+  background-color: red; rgb(80%, 40%, 0%); rgb(204, 102, 0); #cc6600; (using color chart: http://en.wikipedia.org/wiki/Web_colors )
   
   top: position of the top of the element
   left: to position its left side
@@ -57,7 +57,7 @@
   line-height: sets the space between lines in a text element
   padding: space between adge of an element and its content.
   letter-spacing: L i k e  t h i s 
-  text-decoration: (line on top of the text)->overline; underline; line-through'
+  text-decoration: (line on top of the text)->overline; underline; line-through; none;
 }
 
 
