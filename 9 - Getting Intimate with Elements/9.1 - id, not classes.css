@@ -10,6 +10,10 @@ p.specials {    /* All <p> that are in the specials class */
   color: red;
 }
 
+
+
+/* id cannot be reused, and it is used for element that is intended to be used just once in the page */
+
 /* CASE 1: */
 p#footer {     /* For any <p> element has the "footer" id */
   color: red;
