@@ -19,10 +19,16 @@ em { }
   property: value;
 }
 
-/* Adding the class name into the value of the class attribute HTML struture element */
-<p class="class_name"> 
 
+/* For any <p> element has the "footer" id */
+p#id_name {     /* For any <p> element has the "id_name" */
+  color: red;
+}
 
+/* For any element has the "id_name" */ /* <p id="id_name"> */
+#id_name {       
+  color: red;
+}
 
 
 
