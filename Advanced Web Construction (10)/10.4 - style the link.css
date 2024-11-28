@@ -1,0 +1,22 @@
+/* Besides the original blue color link for the <a> element, we can style it (order matters): */
+
+
+/* Unopened link default: blue */
+a: link {
+  color: green;
+}
+
+/* Opened link default: purple */
+a: visited {
+  color: red;
+}
+
+/* Hovering on link default: uncertain text & background */
+a: hover {
+  color: yellow;
+}
+
+/* When you first click on the link */
+a: active {
+  color: white;
+}
