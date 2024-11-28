@@ -1,5 +1,7 @@
 /*
 
+E.g font-size: 200% !important; <- This will override any author style.
+
 .color properties {
   color(font): silver; (pale-green)->olive; gray; (brown-red)->maroon; black; navy; purple; (pink)->Fuchsia; blue; (green-blue)->teal; green; red; (light-green)->lime; yellow; (light-blue)->aqua; white;
   background-color: red; rgb(80%, 40%, 0%); rgb(204, 102, 0); #cc6600; (using color chart: http://en.wikipedia.org/wiki/Web_colors )
