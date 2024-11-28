@@ -3,9 +3,8 @@
 .color properties {
   color(font): silver; (pale-green)->olive; gray; (brown-red)->maroon; black; navy; purple; (pink)->Fuchsia; blue; (green-blue)->teal; green; red; (light-green)->lime; yellow; (light-blue)->aqua; white;
   background-color: red; rgb(80%, 40%, 0%); rgb(204, 102, 0); #cc6600; (using color chart: http://en.wikipedia.org/wiki/Web_colors )
-
-  [Black: #111111..#222222..#333333......#999999..#aaaaaa......#eeeeee: White]
-}
+  
+} [Black: #111111..#222222..#333333......#999999..#aaaaaa......#eeeeee: White]
 
 
 .font properties {
@@ -41,8 +40,7 @@
   [.eot: embedded opentype fonts, proprietary for Microsoft, supported only on IE.]
   ( More at: http://www.fontsquirrel.com/ OR http://www.google.com/webfonts)
 
-  (Use case: h1 { font-family: "Emblema One", sans-serif; } <- sans-serif acts as a back-up.)
-}
+} (Use case: h1 { font-family: "Emblema One", sans-serif; } <- sans-serif acts as a back-up.)
 
 
 .text_format properties {  
@@ -63,7 +61,7 @@
   [Basically, using tthis logic: border-(top,right,bottom, left: choose one)-(color, style, width: choose one): ~;
   line-height: 1.6em;
   padding: 25px; <- space between adge of an element and its content.
-  padding-left: 80px; <- must come after the 'padding: 25px'
+  padding-left: 80px; <- MUST come after the 'padding: 25px'
   margin: 30px;
   margin-right: 250px; <- it can move the border, unlike padding.
   border-radius: 15px; <- for all four corners
@@ -77,6 +75,22 @@
   background-position: top left;
 }
 
-
+.list_&_table properties {
   list-style: change how list item look in a list.
+}
+
+#div_id properties {
+  border-color: #007e7e
+  border-width: thin;
+  border-style: solid;
+  width: 200px; <- not even the padding, just the content area.
+  padding-right: 20px;
+  padding-left: 20px;   
+  padding-bottom: 20px;
+  margin-left: 20px;
+  text-align: center;
+  background-image: url(images/cocktail.gif);
+  background-repeat: repeat-x; <- only tile/repeat the image in the horizontal direction.
+}
+
 */
