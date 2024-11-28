@@ -39,20 +39,33 @@ p#id_name {
 }
 
 /* For printer */
-@media device_name {   
+@media print {   
   body {
     font-family: Times, "Times New Roman", serif;
   }
 }
 
-/* Specify device */
-@media device_name and (max-device-width: ~px) {
+/* If device wider than 480px, right margin = 250px */
+@media screen and (min-device-width: 481px) {
   #id_name {
-    margin-right: ~px;
+    margin-right: 250px;
   }
 }
 
+/* If device is 480px or less, right margin becomes = 30px */
+@media screen and (max-device-width: 480px) {
+  #id_name {
+    margin-right: 30px;
+  }
+}
 
+/*
+smart phone(480x640): media="screen and (max-dvice-with: 480px)"
+tablet-portrait(768x1024): media="screen and (max-dvice-with: 768px) and (orientation: portrait)"
+tablet-landscape(1024x768): media="screen and (max-dvice-with: 1024px) and (orientation: landscape)"
+PC(1280x960): media="screen and (max-dvice-with: 1280px)"
+TV(2650x1600): media="screen and (max-dvice-with: 2650px)"
+*/
 
 
 
