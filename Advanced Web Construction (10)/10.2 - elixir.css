@@ -21,6 +21,8 @@
   background-repeat:     repeat-x;
 
   line-height:           1;
+
+  float:                 right; /* Make the <div id="elixirs"> to a separate column to the right. */
 }
 
 /* h2 in elixirs <div> */
