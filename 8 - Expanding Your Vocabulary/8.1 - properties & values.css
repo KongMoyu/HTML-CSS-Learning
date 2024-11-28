@@ -53,17 +53,23 @@
 
 
 .the_box_model properties {   (content box/padding/border/margin)
-  border: 1px solid gray; <- around the padding.
+  border: 1px solid gray; <- around the padding. (width, style, colour)
   border-color: black; white; ... (you know: the rgb(), #......)
   border-width: 1px; 2px; 3px; 4px; 5px; 6px; thin; medium; thick;
   border-style: solid; dotted; (double-line)-> double; dashed; (sink)-> inset; (rise)-> outset; groove; ridges;
   border-bottom: 1px solid black; thin dotted #888888;
   [Basically, using tthis logic: border-(top,right,bottom, left: choose one)-(color, style, width: choose one): ~;
-  line-height: 1.6em;
+  line-height: 1.6em; normal; 
   padding: 25px; <- space between adge of an element and its content.
+  padding-top: ..;
   padding-left: 80px; <- MUST come after the 'padding: 25px'
+  padding-bottom: ..;
+  padding-left: ..;
   margin: 30px;
+  margin-top: ../
   margin-right: 250px; <- it can move the border, unlike padding.
+  margin-bottom: ../
+  margin-left: ../
   border-radius: 15px; <- for all four corners
   [Basically, using tthis logic: border-(top,bottom: choose one)-(left, right: choose one): 15px; or 0px; <- for the four corners.
 }
