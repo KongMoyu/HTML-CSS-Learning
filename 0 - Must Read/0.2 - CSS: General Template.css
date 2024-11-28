@@ -38,6 +38,21 @@ p#id_name {
   color: red;
 }
 
+/* For printer */
+@media device_name {   
+  body {
+    font-family: Times, "Times New Roman", serif;
+  }
+}
+
+/* Specify device */
+@media device_name and (max-device-width: ~px) {
+  #id_name {
+    margin-right: ~px;
+  }
+}
+
+
 
 
 
