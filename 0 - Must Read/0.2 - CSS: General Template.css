@@ -14,14 +14,21 @@ p { }
 /* Overriding The Inheritance: Inline funtional Elements Specification */
 em { }
 
-/* Define classes by writing the class rules (.class name { properties: values; }) */
-.class_name {
-  property: value;
+/* classes can be reused for any element you want or select */
+
+/* All <p> that are in the "class_name" */
+p.class_name {    
+  color: red; 
+}
+
+/* All elements in the class_name class */ /* <p class="class_name"> */
+.class_name {      
+  color: red;
 }
 
 
-/* For any <p> element has the "footer" id */
-p#id_name {     /* For any <p> element has the "id_name" */
+/* For any <p> element has the "id_name" */
+p#id_name {     
   color: red;
 }
 
