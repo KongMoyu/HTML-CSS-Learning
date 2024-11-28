@@ -29,30 +29,83 @@ em { }
 
 /*
 
-.properties {
-
-  color(font): maroon; gray;
-  background-color: red;
-
-  font-size: bigger or smaller
-  font-weight: use to make text bold
-  font-style: italic; oblique;
-  font-family(default font is serif): sans-serif; (default font is serif;)
-
-  border: 1px solid gray;
-  border-bottom: 1px solid black;
-  line-height: sets the space between lines in a text element
-  padding: space between adge of an element and its content.
-  letter-spacing: L i k e  t h i s 
+.color properties {
+  color(font): silver; (pale-green)->olive; gray; (brown-red)->maroon; black; navy; purple; (pink)->Fuchsia; blue; (green-blue)->teal; green; red; (light-green)->lime; yellow; (light-blue)->aqua; white;
+  background-color: red; rgb(80%, 40%, 0%); rgb(204, 102, 0); #cc6600; (using color chart: http://en.wikipedia.org/wiki/Web_colors )
   
+} [Black: #111111..#222222..#333333......#999999..#aaaaaa......#eeeeee: White]
+
+
+.font properties {
+  font-size: xx-small; x-small; small; medium; large; x-large; xx-large; <- best use for body, so that when you change body... everything follows, its like a new default font size for you page.
+  font-size: (h1)->21px; (h2)->17px; (p)->14px;
+  font-size: 150%; <- of the inherited font px size. (OR scale with em, E.g 1.2em;)
+  font-weight: lighter; normal; bold; bolder;
+  font-style: italic; 
+  font-family(default): Times, Times New Roman, Geogia, Savannah, Quarter, serif;  <- (family name at the last)(brower will intrepret in a first-come-first-serve basis, like a priority list.)
+  font-family(without serif): Arial(Common), Geneva(MAC), Verdana(PC), "Trebuchet MS", "Arial Black", Iceland, Angel, Nautica, sans-serif;
+  font-family(playful): "Comic Sans", "Apple Chancery", Cartoon, cursive;
+  font-family(typewriter): Courier, "Courier New", "Andale Mono", Messenger, monospace;
+  font-family(stylized): Impact, "Last Ninja", Crush, fantasy;
+  [The @font-face rule: define name + location, using E.g .woff file.]
+  [.woff: web open font format, supported on most modern browswer]
+  [.svg: scalable vector graphic fonts, is a general-puepose graphics format.] 
+  [.ttf: truetype (older)]
+  [.otf: opentype (newer), builds on top of truetype.]
+  [.eot: embedded opentype fonts, proprietary for Microsoft, supported only on IE.]
+}
+
+
+@font-face {
+  font-family: "Emblema One"; <- you can create any name you want.
+  src: url("./EmblemaOne-Regular.woff"), 
+  src: url("./EmblemaOne-Regular.ttf"); <- put in two type files' url as value for the browser to get the font.
+
+ [The @font-face rule: define name + location, using E.g .woff file.]
+  [.woff: web open font format, supported on most modern browswer]
+  [.svg: scalable vector graphic fonts, is a general-puepose graphics format.] 
+  [.ttf: truetype (older)]
+  [.otf: opentype (newer), builds on top of truetype.]
+  [.eot: embedded opentype fonts, proprietary for Microsoft, supported only on IE.]
+  ( More at: http://www.fontsquirrel.com/ OR http://www.google.com/webfonts)
+
+} (Use case: h1 { font-family: "Emblema One", sans-serif; } <- sans-serif acts as a back-up.)
+
+
+.text_format properties {  
   top: position of the top of the element
   left: to position its left side
   text-align: left; center; or right;
+  letter-spacing: L i k e  t h i s 
+  text-decoration: (line on top of the text)->overline; underline; line-through; none;
+}
 
+
+.the_box_model properties {   (content box/padding/border/margin)
+  border: 1px solid gray; <- around the padding.
+  border-color: black; white; ... (you know: the rgb(), #......)
+  border-width: 1px; 2px; 3px; 4px; 5px; 6px; thin; medium; thick;
+  border-style: solid; dotted; (double-line)-> double; dashed; (sink)-> inset; (rise)-> outset; groove; ridges;
+  border-bottom: 1px solid black; thin dotted #888888;
+  [Basically, using tthis logic: border-(top,right,bottom, left: choose one)-(color, style, width: choose one): ~;
+  line-height: 1.6em;
+  padding: 25px; <- space between adge of an element and its content.
+  padding-left: 80px; <- must come after the 'padding: 25px'
+  margin: 30px;
+  margin-right: 250px; <- it can move the border, unlike padding.
+  border-radius: 15px; <- for all four corners
+  [Basically, using tthis logic: border-(top,bottom: choose one)-(left, right: choose one): 15px; or 0px; <- for the four corners.
+}
+
+
+.insert_object properties {
+  background-image: url(images/background.gif); <- to put an image into an element (E.g <p>), as a background image. No "" require, http:// URL accepted.
+  background-repeat: no-repeat; repeat-x; repeat-y; (do whatever the parent element does) -> inherit;
+  background-position: top left;
+}
+
+.list_&_table properties {
   list-style: change how list item look in a list.
-
-  background-image: to put an image behind an element.
-
 }
 
 */
