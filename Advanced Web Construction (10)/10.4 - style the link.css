@@ -1,22 +1,41 @@
-/* Besides the original blue color link for the <a> element, we can style it (order matters): */
+/* Besides the original blue color link for the <a> element, we can style it to other stylings (order matters): */
 
+/* Also, you don't have to specify the :link or :visited in the html file, because they are Pseudo-classes. */
 
 /* Unopened link default: blue */
-a: link {
+a:link {
   color: green;
 }
 
 /* Opened link default: purple */
-a: visited {
+a:visited {
   color: red;
 }
 
 /* Hovering on link default: uncertain text & background */
-a: hover {
+a:hover {
   color: yellow;
 }
 
 /* When you first click on the link */
-a: active {
+a:active {
   color: white;
 }
+
+
+/* For <a> element that is nested in an element with the id "elixirs" */
+#elixirs a:link {
+  color: #007e7e;
+}
+
+#elixirs a:visited {
+  color: #333333;
+}
+
+#elixirs a:hover {
+  background: #f88396;
+  color: #0d5353;
+}
+
+
+
