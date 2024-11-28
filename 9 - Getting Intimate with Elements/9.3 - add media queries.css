@@ -11,6 +11,7 @@ tablet-portrait(768x1024): media="screen and (max-dvice-with: 768px) and (orient
 tablet-landscape(1024x768): media="screen and (max-dvice-with: 1024px) and (orientation: landscape)"
 PC(1280x960): media="screen and (max-dvice-with: 1280px)"
 TV(2650x1600): media="screen and (max-dvice-with: 2650px)"
+*/
 
 /* In CSS file: */
 
