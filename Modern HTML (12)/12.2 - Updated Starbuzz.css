@@ -110,7 +110,7 @@ nav {
 
 nav ul {
   margin: 0px;
-  list-style-type: none;
+  list-style-type: none; /* for normal list, the value can be disc; circle; square; none; */
   padding: 5px 0px 5px 0px;
 }
 
