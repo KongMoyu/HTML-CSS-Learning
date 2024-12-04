@@ -21,7 +21,7 @@ header {
   height: 108px;
 }
 
-headerSlogan {
+#headerSlogan {
   float: right;
 }
 
