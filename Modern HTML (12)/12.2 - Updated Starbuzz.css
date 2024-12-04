@@ -112,6 +112,7 @@ nav ul {
   margin: 0px;
   list-style-type: none; /* for normal list, the value can be disc; circle; square; none; */
   padding: 5px 0px 5px 0px;
+  /* list-style-image: url(images/backpack.gif); <- custom marker, not just dots anymore */
 }
 
 nav ul li {
